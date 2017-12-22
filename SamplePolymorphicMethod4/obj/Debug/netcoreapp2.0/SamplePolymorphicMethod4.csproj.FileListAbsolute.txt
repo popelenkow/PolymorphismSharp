@@ -1,0 +1,13 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod4.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod4.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod4.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod4.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod4.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\PolymorphismSharpCore.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\bin\Debug\netcoreapp2.0\PolymorphismSharpCore.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod4.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod4.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod4.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod4.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod4.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod4\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod4.pdb

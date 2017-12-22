@@ -1,0 +1,3 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod1\obj\Debug\netcoreapp1.1\SamplePolymorphicMethod1.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod1\obj\Debug\netcoreapp1.1\SamplePolymorphicMethod1.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod1\obj\Debug\netcoreapp1.1\SamplePolymorphicMethod1.AssemblyInfo.cs
