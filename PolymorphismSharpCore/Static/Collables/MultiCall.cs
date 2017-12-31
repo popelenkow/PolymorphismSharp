@@ -12,7 +12,7 @@ namespace PolymorphismSharp.Static.Callables
         {
             InstanceMethod = instanceMethod;
         }
-        public void Call(params dynamic[] args)
+        public void Call(params object[] args)
         {
             var method = InstanceMethod;
             if (method == null) return;

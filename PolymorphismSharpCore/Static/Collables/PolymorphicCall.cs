@@ -37,7 +37,7 @@ namespace PolymorphismSharp.Static.Callables
         {
             InstanceMethods = instanceMethods;
         }
-        public TResult Call(params dynamic[] args)
+        public TResult Call(params object[] args)
         {
             var arr = new List<IPolymorphicMethod<TResult>>();
             TResult result = default(TResult);

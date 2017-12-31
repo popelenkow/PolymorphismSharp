@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleMultiMethod2", "Sampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleMultiMethod3", "SampleMultiMethod3\SampleMultiMethod3.csproj", "{24D1931E-621D-4E54-ABB0-1EECF81ADB25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePolymorphicMethod3", "SamplePolymorphicMethod3\SamplePolymorphicMethod3.csproj", "{CD6A8C03-82AB-4E2C-8FF6-7B783E336CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamplePolymorphicMethod3", "SamplePolymorphicMethod3\SamplePolymorphicMethod3.csproj", "{CD6A8C03-82AB-4E2C-8FF6-7B783E336CB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMultiMethod4", "SampleMultiMethod4\SampleMultiMethod4.csproj", "{36B2A7A7-4EFD-49D2-AC20-CA2D9B89BFEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleMultiMethod4", "SampleMultiMethod4\SampleMultiMethod4.csproj", "{36B2A7A7-4EFD-49D2-AC20-CA2D9B89BFEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePolymorphicMethod4", "SamplePolymorphicMethod4\SamplePolymorphicMethod4.csproj", "{1D890F24-8561-4772-B609-B6FB019D966A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamplePolymorphicMethod4", "SamplePolymorphicMethod4\SamplePolymorphicMethod4.csproj", "{1D890F24-8561-4772-B609-B6FB019D966A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +68,16 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{164BA1AA-B07B-435B-BA57-DD0DE583D3EF} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{8668B1B3-18A6-480D-9C9B-7AED5D159D49} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{40D8C4D7-4522-489C-829C-AD1DFC289D56} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{67CA66CE-478F-4708-BC28-B0A8A015DACF} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{24D1931E-621D-4E54-ABB0-1EECF81ADB25} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{CD6A8C03-82AB-4E2C-8FF6-7B783E336CB7} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{36B2A7A7-4EFD-49D2-AC20-CA2D9B89BFEB} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
+		{1D890F24-8561-4772-B609-B6FB019D966A} = {349D3B05-B3C2-4D16-8C00-0440C8F7EB8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05AB5FF7-E27B-4293-90CE-61000F96C47B}
