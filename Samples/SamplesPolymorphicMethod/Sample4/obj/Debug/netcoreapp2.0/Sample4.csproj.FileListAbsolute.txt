@@ -1,0 +1,13 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\obj\Debug\netcoreapp2.0\Sample4.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\obj\Debug\netcoreapp2.0\Sample4.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\obj\Debug\netcoreapp2.0\Sample4.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\Sample4.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\Sample4.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\Sample4.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\Sample4.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\Sample4.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\obj\Debug\netcoreapp2.0\Sample4.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\obj\Debug\netcoreapp2.0\Sample4.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample4\obj\Debug\netcoreapp2.0\Sample4.csprojResolveAssemblyReference.cache

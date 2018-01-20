@@ -1,0 +1,13 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\obj\Debug\netcoreapp2.0\Sample1.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\obj\Debug\netcoreapp2.0\Sample1.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\obj\Debug\netcoreapp2.0\Sample1.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\Sample1.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\Sample1.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\Sample1.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\Sample1.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\Sample1.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\obj\Debug\netcoreapp2.0\Sample1.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\obj\Debug\netcoreapp2.0\Sample1.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\Sample1\obj\Debug\netcoreapp2.0\Sample1.pdb
