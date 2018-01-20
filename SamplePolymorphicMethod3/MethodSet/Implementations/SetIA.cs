@@ -9,13 +9,11 @@ namespace Sample.MethodSet.Implementations
 {
     class SetIA : PolymorphicMethod, IMethodSet<IA>
     {
-        public void Before(IA model, int arg)
+        public void Call(IA model, int arg)
         {
             model.PropertyA = arg + 5;
             Console.WriteLine(model.GetType().Name + " call before " + this.GetType().Name);
-        }
-        public void After(IA model, int arg)
-        {
+            CallNextMethod();
             Console.WriteLine(model.GetType().Name + " call after " + this.GetType().Name);
         }
     }

@@ -11,3 +11,16 @@ C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\S
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.AssemblyInfo.cs
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.dll
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod3.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod3.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod3.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod3.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\SamplePolymorphicMethod3.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\PolymorphismSharpCore.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\bin\Debug\netcoreapp2.0\PolymorphismSharpCore.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SamplePolymorphicMethod3\obj\Debug\netcoreapp2.0\SamplePolymorphicMethod3.pdb

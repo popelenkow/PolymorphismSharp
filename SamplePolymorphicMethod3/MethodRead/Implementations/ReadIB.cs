@@ -8,12 +8,10 @@ namespace Sample.MethodRead.Implementations
 {
     class ReadIB : PolymorphicMethod<string>, IMethodRead<IB>
     {
-        public void Before(IB model)
+        public string Call(IB model)
         {
-        }
-        public void After(IB model)
-        {
-            this.Result += " PropertyB " + model.PropertyB;
+            var result = CallNextMethod();
+            return result + " PropertyB " + model.PropertyB;
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Sample.MethodRead
     interface IMethodRead<TModel> : IPolymorphicMethod<string>
         where TModel : IA
     {
-        void Before(TModel model);
-        void After(TModel model);
+        string Call(TModel model);
     }
 }

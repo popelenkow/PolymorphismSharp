@@ -8,12 +8,10 @@ namespace Sample.MethodRead.Implementations
 {
     class ReadIA : PolymorphicMethod<string>,  IMethodRead<IA>
     {
-        public void Before(IA model)
+        public string Call(IA model)
         {
-        }
-        public void After(IA model)
-        {
-            this.Result += " PropertyA " + model.PropertyA;
+            var result = CallNextMethod();
+            return result + " PropertyA " + model.PropertyA;
         }
     }
 }

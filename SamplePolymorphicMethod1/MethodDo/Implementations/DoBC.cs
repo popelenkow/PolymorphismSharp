@@ -8,12 +8,10 @@ namespace Sample.MethodDo.Implementations
 {
     class DoBC : PolymorphicMethod, IMethodDo<BC>
     {
-        public void Before(BC model, params object[] args)
+        public void Call(BC model, params object[] args)
         {
             Console.WriteLine("Before: method " + this.GetType().Name);
-        }
-        public void After(BC model, params object[] args)
-        {
+            CallNextMethod();
             Console.WriteLine("After: method " + this.GetType().Name);
         }
     }

@@ -10,15 +10,17 @@ namespace Sample.MethodDo.Implementations
 {
     class DoIC : PolymorphicMethod<IResult>, IMethodDo<IC>
     {
-        public void Before(IC model, IArg arg)
+        public IResult Call(IC model, IArg arg)
         {
             Console.WriteLine("Before: method " + this.GetType().Name);
-            this?.Result.Strings.Add("Before " + this.GetType().Name + " with args " + arg.String);
-        }
-        public void After(IC model, IArg arg)
-        {
+            IResult result = CallNextMethod();
+            if (result == null)
+            {
+                result = new Result();
+            }
+            result.Strings.Add("After " + this.GetType().Name + " with args " + arg.String);
             Console.WriteLine("After: method " + this.GetType().Name);
-            this?.Result.Strings.Add("After " + this.GetType().Name + " with args " + arg.String);
+            return result;
         }
     }
 }

@@ -9,16 +9,16 @@ using PolymorphismSharp.Static.Callables;
 
 namespace PolymorphismSharp.Static.Dispatchers
 {
-    public abstract class DispatcherGeneralizedMethod<TGeneralized, TMethod> : DispatcherGeneralizedMethodBase<TGeneralized, TMethod>
+    public interface IDispatcherGeneralizedMethod<TGeneralized, TMethod>
         where TGeneralized : class, IGeneralizedMethod
         where TMethod : TGeneralized
     {
-        public abstract ICallable<TGeneralized> GetMethod(params object[] argGenerics);
+        ICallable<TGeneralized> GetMethod(params object[] argGenerics);
     }
-    public abstract class DispatcherGeneralizedMethod<TGeneralized, TMethod, TResult> : DispatcherGeneralizedMethodBase<TGeneralized, TMethod>
+    public interface IDispatcherGeneralizedMethod<TGeneralized, TMethod, TResult> 
        where TGeneralized : class, IGeneralizedMethod
        where TMethod : TGeneralized
     {
-        public abstract ICallable<TGeneralized, TResult> GetMethod(params object[] argGenerics);
+        ICallable<TGeneralized, TResult> GetMethod(params object[] argGenerics);
     }
 }

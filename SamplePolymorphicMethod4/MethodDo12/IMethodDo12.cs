@@ -10,7 +10,6 @@ namespace Sample.MethodDo12
         where TModel1 : IA1
         where TModel2 : IA2
     {
-        void Before(TModel2 model2, int arg, TModel1 model1);
-        void After(TModel2 model2, int arg, TModel1 model1);
+        void Call(TModel2 model2, int arg, TModel1 model1);
     }
 }

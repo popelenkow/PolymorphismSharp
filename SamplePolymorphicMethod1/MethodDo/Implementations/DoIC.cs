@@ -8,12 +8,10 @@ namespace Sample.MethodDo.Implementations
 {
     class DoIC : PolymorphicMethod, IMethodDo<IC>
     {
-        public void Before(IC model, params object[] args)
+        public void Call(IC model, params object[] args)
         {
             Console.WriteLine("Before: method " + this.GetType().Name);
-        }
-        public void After(IC model, params object[] args)
-        {
+            CallNextMethod();
             Console.WriteLine("After: method " + this.GetType().Name);
         }
     }

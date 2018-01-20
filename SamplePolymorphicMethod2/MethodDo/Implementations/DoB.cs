@@ -10,18 +10,18 @@ namespace Sample.MethodDo.Implementations
 {
     class DoB : PolymorphicMethod<IResult>, IMethodDo<B>
     {
-        public void Before(B model, IArg arg)
+        public IResult Call(B model, IArg arg)
         {
             Console.WriteLine("Before: method " + this.GetType().Name);
-            if (this.Result == null)
-            {
-                this.Result = new Result();
-            }
+            
             arg.String += "B";
-        }
-        public void After(B model, IArg arg)
-        {
+            IResult result = CallNextMethod();
+            if (result == null)
+            {
+                result = new Result();
+            }
             Console.WriteLine("After: method " + this.GetType().Name);
+            return result;
         }
     }
 }

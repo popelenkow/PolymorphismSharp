@@ -9,7 +9,6 @@ namespace Sample.MethodSet
     interface IMethodSet<TModel> : IPolymorphicMethod
         where TModel : IA
     {
-        void Before(TModel model, int arg);
-        void After(TModel model, int arg);
+        void Call(TModel model, int arg);
     }
 }

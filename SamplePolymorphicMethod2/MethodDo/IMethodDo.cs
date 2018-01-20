@@ -11,7 +11,6 @@ namespace Sample.MethodDo
     interface IMethodDo<TModel> : IPolymorphicMethod<IResult>
         where TModel : IA
     {
-        void Before(TModel model, IArg arg);
-        void After(TModel model, IArg arg);
+        IResult Call(TModel model, IArg arg);
     }
 }

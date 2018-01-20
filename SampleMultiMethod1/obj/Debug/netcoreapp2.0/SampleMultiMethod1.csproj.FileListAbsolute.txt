@@ -11,3 +11,16 @@ C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\S
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.AssemblyInfo.cs
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.dll
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharpSolution\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\SampleMultiMethod1.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\SampleMultiMethod1.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\SampleMultiMethod1.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\SampleMultiMethod1.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\SampleMultiMethod1.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\PolymorphismSharpCore.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\bin\Debug\netcoreapp2.0\PolymorphismSharpCore.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\SampleMultiMethod1\obj\Debug\netcoreapp2.0\SampleMultiMethod1.pdb
