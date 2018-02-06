@@ -1,4 +1,4 @@
-﻿using PolymorphismSharp.Extentions;
+﻿using PolymorphismSharp.Static.Extentions;
 using PolymorphismSharp.Static.Methods;
 using System;
 using System.Collections.Generic;
@@ -8,9 +8,8 @@ using PolymorphismSharp.Static.Callables;
 
 namespace PolymorphismSharp.Static.Dispatchers
 {
-    public abstract class _DispatcherGeneralizedMethodBase<TGeneralized, TMethod>
-       where TGeneralized : class, IGeneralizedMethod
-       where TMethod : TGeneralized
+    public abstract class _DispatcherGeneralizedMethodBase<TMethod>
+       where TMethod : class, IGeneralizedMethod
     {
         private List<(Type Interface, Type Implementation)> Methods { get; set; }
 
@@ -55,18 +54,16 @@ namespace PolymorphismSharp.Static.Dispatchers
             return r;
         }
     }
-    public abstract class DispatcherGeneralizedMethodBase<TGeneralized, TMethod>
-        : _DispatcherGeneralizedMethodBase<TGeneralized, TMethod>, IDispatcherGeneralizedMethod<TGeneralized, TMethod>
-       where TGeneralized : class, IGeneralizedMethod
-       where TMethod : TGeneralized
+    public abstract class DispatcherGeneralizedMethodBase<TMethod>
+        : _DispatcherGeneralizedMethodBase<TMethod>, IDispatcherGeneralizedMethod<TMethod>
+       where TMethod : class, IGeneralizedMethod
     {
-        public abstract ICallable<TGeneralized> GetMethod(params object[] argGenerics);
+        public abstract ICallable GetMethod(params object[] argGenerics);
     }
-    public abstract class DispatcherGeneralizedMethodBase<TGeneralized, TMethod, TResult>
-        : _DispatcherGeneralizedMethodBase<TGeneralized, TMethod>, IDispatcherGeneralizedMethod<TGeneralized, TMethod, TResult>
-       where TGeneralized : class, IGeneralizedMethod
-       where TMethod : TGeneralized
+    public abstract class DispatcherGeneralizedMethodBase<TMethod, TResult>
+        : _DispatcherGeneralizedMethodBase<TMethod>, IDispatcherGeneralizedMethod<TMethod, TResult>
+       where TMethod : class, IGeneralizedMethod
     {
-        public abstract ICallable<TGeneralized, TResult> GetMethod(params object[] argGenerics);
+        public abstract ICallable<TResult> GetMethod(params object[] argGenerics);
     }
 }

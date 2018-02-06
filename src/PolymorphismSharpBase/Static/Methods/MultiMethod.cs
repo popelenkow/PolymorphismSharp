@@ -4,7 +4,10 @@ using System.Text;
 
 namespace PolymorphismSharp.Static.Methods
 {
-    class MultiMethod
+    public class MultiMethod : IMultiMethod
+    {
+    }
+    public class MultiMethod<TResult> : IMultiMethod<TResult>
     {
     }
 }

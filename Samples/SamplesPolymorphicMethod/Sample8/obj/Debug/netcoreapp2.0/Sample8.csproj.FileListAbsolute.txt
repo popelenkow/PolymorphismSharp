@@ -1,0 +1,13 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\Sample8.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\Sample8.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\Sample8.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\Sample8.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\Sample8.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\obj\Debug\netcoreapp2.0\Sample8.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\obj\Debug\netcoreapp2.0\Sample8.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\obj\Debug\netcoreapp2.0\Sample8.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\obj\Debug\netcoreapp2.0\Sample8.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\obj\Debug\netcoreapp2.0\Sample8.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample8\obj\Debug\netcoreapp2.0\Sample8.pdb

@@ -5,7 +5,7 @@ using PolymorphismSharp.Static.Methods;
 
 namespace PolymorphismSharp.Static.Callables
 {
-    class MultiCall : ICallable<IMultiMethod>
+    class MultiCall : ICallable
     {
         public (Type Interface, Type Implementation) Pair { get; set; }
         public MultiCall((Type Interface, Type Implementation) pair)
@@ -18,7 +18,7 @@ namespace PolymorphismSharp.Static.Callables
             Pair.Interface.GetMethod("Call").Invoke(instance, args);
         }
     }
-    class MultiCall<TResult> : ICallable<IMultiMethod<TResult>, TResult>
+    class MultiCall<TResult> : ICallable<TResult>
     {
         public (Type Interface, Type Implementation) Pair { get; set; }
         public MultiCall((Type Interface, Type Implementation) pair)

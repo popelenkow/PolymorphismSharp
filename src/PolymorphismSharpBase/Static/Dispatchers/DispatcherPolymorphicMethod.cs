@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Extentions;
+using PolymorphismSharp.Static.Extentions;
 using System.Linq;
 using PolymorphismSharp.Static.Methods;
 using PolymorphismSharp.Static.Callables;
 
 namespace PolymorphismSharp.Static.Dispatchers
 {
-    public class DispatcherPolymorphicMethod<TMethod> : DispatcherGeneralizedMethodBase<IPolymorphicMethod, TMethod>
+    public class DispatcherPolymorphicMethod<TMethod> : DispatcherGeneralizedMethodBase<TMethod>
         where TMethod : class, IPolymorphicMethod
     {
-        public override ICallable<IPolymorphicMethod> GetMethod(params object[] argGenerics)
+        public override ICallable GetMethod(params object[] argGenerics)
         {
             return new PolymorphicCall
             {
@@ -19,10 +19,10 @@ namespace PolymorphismSharp.Static.Dispatchers
             };
         }
     }
-    public class DispatcherPolymorphicMethod<TMethod, TResult> : DispatcherGeneralizedMethodBase<IPolymorphicMethod<TResult>, TMethod, TResult>
+    public class DispatcherPolymorphicMethod<TMethod, TResult> : DispatcherGeneralizedMethodBase<TMethod, TResult>
         where TMethod : class, IPolymorphicMethod<TResult>
     {
-        public override ICallable<IPolymorphicMethod<TResult>, TResult> GetMethod(params object[] argGenerics)
+        public override ICallable<TResult> GetMethod(params object[] argGenerics)
         {
             return new PolymorphicCall<TResult>
             {
