@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PolymorphismSharp.Static.Methods
+namespace PolymorphismSharp.Methods
 {
     public class MultiMethod : IMultiMethod
-    {
-    }
-    public class MultiMethod<TResult> : IMultiMethod<TResult>
     {
     }
 }

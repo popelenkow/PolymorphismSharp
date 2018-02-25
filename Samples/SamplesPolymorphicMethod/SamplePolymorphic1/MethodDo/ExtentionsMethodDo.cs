@@ -1,19 +1,19 @@
-﻿using PolymorphismSharp.Static.Dispatchers;
+﻿using PolymorphismSharp.Methods;
+using PolymorphismSharp.Parametric.Dispatchers;
 using Sample.Models;
 
 namespace Sample.MethodDo
 {
     public static class ExtentionsMethodDo
     {
-        private static DispatcherPolymorphicMethod<IMethodDo<A>> dispatcher { get; set; }
+        private static IMethodDo<A> _method;
         static ExtentionsMethodDo()
         {
-            dispatcher = new DispatcherPolymorphicMethod<IMethodDo<A>>();
+            _method = GeneralizedMethodBuilder.GetPolymorphicMethod<IMethodDo<A>>();
         }
         public static void Do(this A model, params object[] args)
         {
-            dispatcher.GetMethod(model)
-                      .Call(model, args);
+            _method.Call(model, args);
         }
     }
 }

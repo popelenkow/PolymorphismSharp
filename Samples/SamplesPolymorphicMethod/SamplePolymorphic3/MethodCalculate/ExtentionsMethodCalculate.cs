@@ -1,19 +1,19 @@
-﻿using PolymorphismSharp.Static.Dispatchers;
+﻿using PolymorphismSharp.Methods;
+using PolymorphismSharp.Parametric.Dispatchers;
 using Sample.Models;
 
 namespace Sample.MethodCalculate
 {
     public static class ExtentionsMethodCalculate
     {
-        private static DispatcherPolymorphicMethod<IMethodCalculate<A>, double> dispatcher { get; set; }
+        private static IMethodCalculate<A> _method;
         static ExtentionsMethodCalculate()
         {
-            dispatcher = new DispatcherPolymorphicMethod<IMethodCalculate<A>, double>();
+            _method = GeneralizedMethodBuilder.GetPolymorphicMethod<IMethodCalculate<A>>();
         }
         public static double Calculate(this A model, int arg1, float arg2, string arg3)
         {
-            return dispatcher.GetMethod(model)
-                             .Call(arg3, arg1, model, arg2);
+            return _method.Call(arg3, arg1, model, arg2);
         }
     }
 }

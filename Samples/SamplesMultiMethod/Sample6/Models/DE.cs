@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    class DE : ID, IE
+    public class DE : ID, IE
     {
     }
 }

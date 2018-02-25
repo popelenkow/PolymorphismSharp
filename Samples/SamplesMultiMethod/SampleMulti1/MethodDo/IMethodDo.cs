@@ -1,4 +1,4 @@
-﻿using PolymorphismSharp.Static.Methods;
+﻿using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodDo

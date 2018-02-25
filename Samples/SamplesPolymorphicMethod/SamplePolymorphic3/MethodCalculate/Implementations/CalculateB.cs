@@ -10,7 +10,7 @@ namespace Sample.MethodCalculate.Implementations
             int a1 = -10;
             float a2 = 3.14f;
             string a3 = "arg3";
-            return arg2 + CallNextMethod(a3, a1, model, a2);
+            return arg2 + (double)NextMethod.Call(a3, a1, model, a2);
         }
     }
 }

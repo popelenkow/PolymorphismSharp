@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Callables;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Callables;
+using PolymorphismSharp.Methods;
 
 namespace Sample.MethodDo
 {

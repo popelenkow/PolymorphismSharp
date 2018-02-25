@@ -1,12 +1,13 @@
-﻿using System;
+﻿using PolymorphismSharp.Methods;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace PolymorphismSharp.Static.Extentions
+namespace PolymorphismSharp.Parametric.Extensions
 {
-    public static class ExtentionsAssembly
+    public static class ExtensionsAssembly
     {
         public static Type[] GetGeneralizedMethods(this AppDomain appDomain, Type typeBase, string nameNamespace = null)
         {
@@ -14,6 +15,7 @@ namespace PolymorphismSharp.Static.Extentions
             Assembly[] assemblies = appDomain.GetAssemblies();
             foreach (var assembly in assemblies)
             {
+                if (assembly == ILMethodGenerator.Assembly) continue;
                 var targetMethods = assembly.GetGeneralizedMethods(typeBase, nameNamespace);
 
                 foreach (var type in targetMethods)

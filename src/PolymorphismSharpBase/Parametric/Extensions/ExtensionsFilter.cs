@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PolymorphismSharp.Static.Extentions
+namespace PolymorphismSharp.Parametric.Extensions
 {
-    public static class ExtentionsFilter
+    public static class ExtensionsFilter
     {
         public static IEnumerable<Type> FilterInheritedMethods
            (this IEnumerable<Type> source, Type typeBase)

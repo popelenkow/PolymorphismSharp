@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using Sample.Models;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 
 namespace Sample.MethodRead.Implementations
 {
-    class ReadIC : PolymorphicMethod<string>, IMethodRead<IC>
+    class ReadIC : PolymorphicMethod, IMethodRead<IC>
     {
         public string Call(IC model)
         {
-            var result = CallNextMethod();
+            var result = NextMethod.Call(model) as string;
             return result + " PropertyC " + model.PropertyC;
         }
     }

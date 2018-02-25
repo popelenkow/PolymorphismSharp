@@ -2,21 +2,22 @@
 using System.Collections.Generic;
 using System.Text;
 using Sample.Models;
-using PolymorphismSharp.Static.Dispatchers;
+using PolymorphismSharp.Parametric.Dispatchers;
+using PolymorphismSharp.Methods;
 
 namespace Sample.MethodSet
 {
     static class ExtentionsMethodSet
     {
-        private static DispatcherPolymorphicMethod<IMethodSet<IA>> Dispatcher { get; set; }
+        private static IMethodSet<IA> _method;
         static ExtentionsMethodSet()
         {
-            Dispatcher = new DispatcherPolymorphicMethod<IMethodSet<IA>>();
+            _method = GeneralizedMethodBuilder.GetPolymorphicMethod<IMethodSet<IA>>();
         }
+
         public static void Set(this IA model, int arg)
         {
-            Dispatcher.GetMethod(model)
-                      .Call(model, arg);
+            _method.Call(model, arg);
         }
     }
 }

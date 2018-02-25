@@ -1,20 +1,20 @@
-﻿using PolymorphismSharp.Static.Extentions;
-using PolymorphismSharp.Static.Methods;
+﻿using PolymorphismSharp.Parametric.Extensions;
+using PolymorphismSharp.Methods;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using PolymorphismSharp.Static.Callables;
+using PolymorphismSharp.Callables;
 
-namespace PolymorphismSharp.Static.Dispatchers
+namespace PolymorphismSharp.Parametric.Dispatchers
 {
-    public abstract class _DispatcherGeneralizedMethodBase<TMethod>
+    class DispatcherGeneralizedMethod<TMethod> : IDispatcherGeneralizedMethod<TMethod>
        where TMethod : class, IGeneralizedMethod
     {
         private List<(Type Interface, Type Implementation)> Methods { get; set; }
 
         #region Init
-        public _DispatcherGeneralizedMethodBase()
+        public DispatcherGeneralizedMethod()
         {
             Methods = GetGeneralizedMethods();
         }
@@ -53,17 +53,28 @@ namespace PolymorphismSharp.Static.Dispatchers
             }
             return r;
         }
+
+        public ICallable GetMethod(params object[] argGenerics)
+        {
+            if (typeof(TMethod).GetInterface("IMultiMethod") != null)
+            {
+                var ms = GetMethods(argGenerics);
+                //var m = (ms.Count() == 0) ? null : ms.First();
+                var m = ms.First();
+                return new MultiCall(m);
+            }
+            if (typeof(TMethod).GetInterface("IPolymorphicMethod") != null)
+            {
+                return new PolymorphicCall
+                {
+                    Pairs = GetMethods(argGenerics).ToList()
+
+                };
+            }
+            return null;
+        }
+
+
     }
-    public abstract class DispatcherGeneralizedMethodBase<TMethod>
-        : _DispatcherGeneralizedMethodBase<TMethod>, IDispatcherGeneralizedMethod<TMethod>
-       where TMethod : class, IGeneralizedMethod
-    {
-        public abstract ICallable GetMethod(params object[] argGenerics);
-    }
-    public abstract class DispatcherGeneralizedMethodBase<TMethod, TResult>
-        : _DispatcherGeneralizedMethodBase<TMethod>, IDispatcherGeneralizedMethod<TMethod, TResult>
-       where TMethod : class, IGeneralizedMethod
-    {
-        public abstract ICallable<TResult> GetMethod(params object[] argGenerics);
-    }
+
 }

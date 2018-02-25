@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Args
 {
-    interface IArg
+    public interface IArg
     {
         string String { get; set; }
     }

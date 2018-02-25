@@ -8,7 +8,7 @@ namespace Sample.MethodDo.Implementations
         public override void Call(C model, params object[] args)
         {
             Console.WriteLine("Method " + this.GetType().Name + " before");
-            CallNextMethod();
+            NextMethod.Call(model, args);
             Console.WriteLine("Method " + this.GetType().Name + " after");
         }
     }

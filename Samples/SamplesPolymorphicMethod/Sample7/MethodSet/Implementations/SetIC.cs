@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Sample.Models;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 
 
 namespace Sample.MethodSet.Implementations
@@ -13,7 +13,7 @@ namespace Sample.MethodSet.Implementations
         {
             model.PropertyC = arg-100;
             Console.WriteLine(model.GetType().Name + " call before " + this.GetType().Name);
-            CallNextMethod();
+            NextMethod.Call(model, arg);
             Console.WriteLine(model.GetType().Name + " call after " + this.GetType().Name);
         }
     }

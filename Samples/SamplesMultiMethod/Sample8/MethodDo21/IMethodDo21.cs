@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodDo21
 {
-    interface IMethodDo21<TModel2, TModel1> : IMultiMethod
+    public interface IMethodDo21<TModel2, TModel1> : IMultiMethod
         where TModel1 : IA1
         where TModel2 : IA2
     {

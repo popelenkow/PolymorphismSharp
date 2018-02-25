@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    interface IC : IB
+    public interface IC : IB
     {
         int PropertyC { get; set; }
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    class B : A, IB
+    public class B : A, IB
     {
         public int PropertyB { get; set; }
     }

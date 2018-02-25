@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodDo.Implementations

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Results
 {
-    interface IResult
+    public interface IResult
     {
         List<string> Strings { get; set; }
     }

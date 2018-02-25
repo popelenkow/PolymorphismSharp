@@ -6,6 +6,15 @@ using System.Dynamic;
 
 namespace Sample
 {
+    class BB
+    {
+        public BB(int g)
+        {
+
+        }
+    }
+
+
     class Program
     {
         static void Main(string[] args)

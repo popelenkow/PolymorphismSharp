@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    interface IA
+    public interface IA
     {
         int PropertyA { get; set; }
     }

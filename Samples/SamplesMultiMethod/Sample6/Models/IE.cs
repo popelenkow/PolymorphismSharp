@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    interface IE : IA
+    public interface IE : IA
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    class B3 : IB
+    public class B3 : IB
     {
     }
 }

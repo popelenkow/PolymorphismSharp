@@ -1,5 +1,5 @@
 ﻿using Sample.Models;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 
 namespace Sample.MethodCalculate
 { 

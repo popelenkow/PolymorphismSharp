@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 using Sample.Models;
 using Sample.Args;
 using Sample.Results;
 
 namespace Sample.MethodDo.Implementations
 {
-    class DoC : PolymorphicMethod<IResult>, IMethodDo<C>
+    class DoC : PolymorphicMethod, IMethodDo<C>
     {
         public IResult Call(C model, IArg arg)
         {
             Console.WriteLine("Before: method " + this.GetType().Name);
             
             arg.String += "C";
-            IResult result = CallNextMethod();
+            IResult result = NextMethod.Call(model, arg) as IResult;
             if (result == null)
             {
                 result = new Result();

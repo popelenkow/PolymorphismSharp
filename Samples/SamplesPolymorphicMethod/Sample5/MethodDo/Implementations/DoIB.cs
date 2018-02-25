@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodDo.Implementations
@@ -15,7 +15,7 @@ namespace Sample.MethodDo.Implementations
             bool success = n > 0.5;
             string nameSuccess = success ? "Success" : "Fail";
             Console.WriteLine("Before: method " + this.GetType().Name + " try call next... " + nameSuccess);
-            if (success) CallNextMethod();
+            if (success) NextMethod.Call(model, args);
             Console.WriteLine("After: method " + this.GetType().Name);
         }
     }

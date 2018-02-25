@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sample.Models
 {
-    interface IA1
+    public interface IA1
     {
     }
 }

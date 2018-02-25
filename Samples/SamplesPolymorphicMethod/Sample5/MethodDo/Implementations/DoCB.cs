@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodDo.Implementations
@@ -11,7 +11,7 @@ namespace Sample.MethodDo.Implementations
         public void Call(CB model, params object[] args)
         {
             Console.WriteLine("Before: method " + this.GetType().Name);
-            CallNextMethod();
+            NextMethod.Call(model, args);
             Console.WriteLine("After: method " + this.GetType().Name);
         }
     }

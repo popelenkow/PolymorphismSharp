@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PolymorphismSharp.Static.Extentions
+namespace PolymorphismSharp.Parametric.Extensions
 {
-    public static class ExtentionsGenerics
+    public static class ExtensionsGenerics
     {
         public static List<List<Type>>
             GetGenericsPriority(this Type typeMethod, IEnumerable<Type> arguments)

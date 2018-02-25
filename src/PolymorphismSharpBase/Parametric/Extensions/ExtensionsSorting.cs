@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PolymorphismSharp.Static.Extentions
+namespace PolymorphismSharp.Parametric.Extensions
 {
-    public static class ExtentionsSorting
+    public static class ExtensionsSorting
     {
         private class ComparerGeneralizedMethods : IComparer<Type>
         {

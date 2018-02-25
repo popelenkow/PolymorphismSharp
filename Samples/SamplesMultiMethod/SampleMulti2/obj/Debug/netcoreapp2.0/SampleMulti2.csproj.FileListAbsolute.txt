@@ -24,3 +24,16 @@ C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\S
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\SampleMulti2.pdb
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.dll
 C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.pdb
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\SampleMulti2.deps.json
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\SampleMulti2.runtimeconfig.json
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\SampleMulti2.runtimeconfig.dev.json
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\SampleMulti2.dll
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\SampleMulti2.pdb
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.dll
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\bin\Debug\netcoreapp2.0\PolymorphismSharpBase.pdb
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\obj\Debug\netcoreapp2.0\SampleMulti2.csprojResolveAssemblyReference.cache
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\obj\Debug\netcoreapp2.0\SampleMulti2.csproj.CoreCompileInputs.cache
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\obj\Debug\netcoreapp2.0\SampleMulti2.AssemblyInfoInputs.cache
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\obj\Debug\netcoreapp2.0\SampleMulti2.AssemblyInfo.cs
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\obj\Debug\netcoreapp2.0\SampleMulti2.dll
+C:\Users\popel\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\SampleMulti2\obj\Debug\netcoreapp2.0\SampleMulti2.pdb

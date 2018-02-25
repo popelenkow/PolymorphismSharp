@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PolymorphismSharp.Static.Methods;
+using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodRead
 {
-    interface IMethodRead<TModel> : IPolymorphicMethod<string>
+    public interface IMethodRead<TModel> : IPolymorphicMethod
         where TModel : IA
     {
         string Call(TModel model);

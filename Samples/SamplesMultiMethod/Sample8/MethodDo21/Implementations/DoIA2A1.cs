@@ -6,7 +6,7 @@ using Sample.Models;
 
 namespace Sample.MethodDo21.Implementations
 {
-    class DoIA2A1 : IMethodDo21<IA2, A1>
+    public class DoIA2A1 : IMethodDo21<IA2, A1>
     {
         public void Call(IA2 model2, int arg, A1 model1)
         {

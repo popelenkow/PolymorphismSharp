@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PolymorphismSharp.Static.Extentions
+namespace PolymorphismSharp.Parametric.Extensions
 {
-    public static class ExtentionsType
+    public static class ExtensionsType
     {
         public static bool EqualsName(this Type type1, Type type2)
         {
