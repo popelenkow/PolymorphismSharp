@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="MethodRead\ExtensionMethodRead.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\src\PolymorphismSharpBase\PolymorphismSharpBase.csproj" />
   </ItemGroup>
 

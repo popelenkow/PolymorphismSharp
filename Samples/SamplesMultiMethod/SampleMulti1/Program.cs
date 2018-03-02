@@ -8,13 +8,11 @@ using PolymorphismSharp.Methods;
 
 namespace Sample
 {
-   
-
     class Program
     {
         static void Main(string[] args)
         {
-            var arr = new List<A>
+            var arr = new A[]
             {
                 new B(),
                 new C(),

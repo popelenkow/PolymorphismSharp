@@ -6,15 +6,6 @@ using System.Dynamic;
 
 namespace Sample
 {
-    class BB
-    {
-        public BB(int g)
-        {
-
-        }
-    }
-
-
     class Program
     {
         static void Main(string[] args)
@@ -22,7 +13,7 @@ namespace Sample
             int arg1 = 1;
             float arg2 = 2f;
             string arg3 = "123";
-            var arr = new List<A>
+            var arr = new A[]
             {
                 new A(),
                 new B(),

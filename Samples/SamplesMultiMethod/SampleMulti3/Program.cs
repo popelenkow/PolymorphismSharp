@@ -12,7 +12,7 @@ namespace SampleMulti3
             int arg1 = 1;
             float arg2 = 2f;
             string arg3 = "123";
-            var arr = new List<A>
+            var arr = new A[]
             {
                 new A(),
                 new B(),
