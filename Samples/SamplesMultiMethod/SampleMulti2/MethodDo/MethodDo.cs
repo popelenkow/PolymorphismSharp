@@ -3,9 +3,9 @@ using PolymorphismSharp.Methods;
 
 namespace Sample.MethodDo
 {
-    public abstract class MethodDo<TModel> : MultiMethod
-        where TModel : A
+    public abstract class MethodDo<TParameter> : MultiMethod
+        where TParameter : A
     {
-        public abstract void Call(TModel model, params object[] args);
+        public abstract void Call(TParameter parameter, params object[] args);
     }
 }

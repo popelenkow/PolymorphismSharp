@@ -8,20 +8,18 @@ namespace PolymorphismSharp.Management
 {
     class GeneralizedMethodManager : IGeneralizedMethodManagement
     {
-        public List<(Type Interface, Type Implementation)> _pairs;
-        private Type _methodType;
-        public IGeneralizedMethodManagement _management;
+        private List<(Type Interface, Type Implementation)> _pairs;
+        private Type _contractType;
         public object Proxy { get; set; }
-        public GeneralizedMethodManager(Type methodType, List<(Type Interface, Type Implementation)> pairs)
+        public GeneralizedMethodManager(Type contractType, List<(Type Interface, Type Implementation)> pairs)
         {
-            _methodType = methodType;
+            _contractType = contractType;
             _pairs = pairs;
-            _management = this;
         }
        
-        public object _Call(params object[] args)
+        public object Call(params object[] args)
         {
-            if (_needReturnDefault) return ReturnDefault();
+            if (IsNeedReturnDefault()) return ReturnDefault();
 
             var pair = GetPair();
             var instance = CreateInstance(pair);
@@ -31,11 +29,15 @@ namespace PolymorphismSharp.Management
 
         #region Private
         private int _it = 0;
-        private bool _needReturnDefault { get { return _it == _pairs.Count; } }
+        private bool IsNeedReturnDefault()
+        {
+            return _it == _pairs.Count;
+        }
+
         private object ReturnDefault()
         {
             _it = 0;
-            var t = _methodType.GetMethod("Call").ReturnType;
+            var t = _contractType.GetMethod("Call").ReturnType;
             if (t.IsValueType && t != typeof(void))
             {
                 return Activator.CreateInstance(t);

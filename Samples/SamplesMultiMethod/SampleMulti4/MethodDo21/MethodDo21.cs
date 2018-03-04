@@ -6,10 +6,10 @@ using Sample.Models;
 
 namespace Sample.MethodDo21
 {
-    public abstract class MethodDo21<TModel2, TModel1> : MultiMethod
-        where TModel1 : A1
-        where TModel2 : A2
+    public abstract class MethodDo21<TParameter2, TParameter1> : MultiMethod
+        where TParameter1 : A1
+        where TParameter2 : A2
     {
-        public abstract void Call(TModel2 model2, int arg, TModel1 model1);
+        public abstract void Call(TParameter2 parameter2, int arg, TParameter1 parameter1);
     }
 }

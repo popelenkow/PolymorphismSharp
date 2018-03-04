@@ -9,10 +9,10 @@ namespace Sample.MethodDo12.Implementations
 {
     class DoA1B2 : MethodDo12<A1, B2>
     {
-        public override void Call(B2 model2, int arg, A1 model1)
+        public override void Call(B2 parameter2, int arg, A1 parameter1)
         {
             Console.WriteLine("Method " + this.GetType().Name + " before");
-            NextMethod.Call(model2, arg, model1);
+            NextMethod.Call(parameter2, arg, parameter1);
             Console.WriteLine("Method " + this.GetType().Name + " after");
         }
     }

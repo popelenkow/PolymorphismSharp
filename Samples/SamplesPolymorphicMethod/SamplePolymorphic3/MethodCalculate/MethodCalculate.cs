@@ -3,9 +3,9 @@ using PolymorphismSharp.Methods;
 
 namespace Sample.MethodCalculate
 {
-    public abstract class MethodCalculate<TModel> : PolymorphicMethod<MethodCalculate<A>>
-        where TModel : A
+    public abstract class MethodCalculate<TParameter> : PolymorphicMethod<MethodCalculate<A>>
+        where TParameter : A
     {
-        public abstract double Call(string arg3, int arg1, TModel model, float arg2);
+        public abstract double Call(string arg3, int arg1, TParameter parameter, float arg2);
     }
 }

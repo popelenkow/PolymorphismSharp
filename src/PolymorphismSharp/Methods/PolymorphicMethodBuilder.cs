@@ -9,12 +9,12 @@ namespace PolymorphismSharp.Methods
 
     public static class PolymorphicMethodBuilder
     {
-        public static TMethod GetMethod<TMethod>()
-           where TMethod : PolymorphicMethod<TMethod>
+        public static TContract GetContract<TContract>()
+           where TContract : PolymorphicMethod<TContract>
         {
-            var proxy = ILMethodGenerator.Generate(typeof(TMethod));
-            var dispatcher = new GeneralizedMethodDispatcher(typeof(TMethod), proxy);
-            var a = Activator.CreateInstance(proxy, new object[] { dispatcher }) as TMethod;
+            var proxy = ILMethodGenerator.Generate(typeof(TContract));
+            var dispatcher = new GeneralizedMethodDispatcher(typeof(TContract), proxy);
+            var a = Activator.CreateInstance(proxy, new object[] { dispatcher }) as TContract;
             return a;
         }
     }

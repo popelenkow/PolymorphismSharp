@@ -1,5 +1,5 @@
 ﻿using PolymorphismSharp.Management;
-using PolymorphismSharp.Parametric.Dispatchers;
+using PolymorphismSharp.Parametric;
 using PolymorphismSharp.Reflection;
 using System;
 using System.Collections.Generic;
@@ -13,12 +13,12 @@ namespace PolymorphismSharp.Methods
 {
     public static class MultiMethodBuilder
     {
-        public static TMethod GetMethod<TMethod>()
-            where TMethod : MultiMethod
+        public static TContract GetContract<TContract>()
+            where TContract : MultiMethod
         {
-            var proxy = ILMethodGenerator.Generate(typeof(TMethod));
-            var dispatcher = new GeneralizedMethodDispatcher(typeof(TMethod), proxy);
-            var a = Activator.CreateInstance(proxy, new object[] { dispatcher }) as TMethod;
+            var proxy = ILMethodGenerator.Generate(typeof(TContract));
+            var dispatcher = new GeneralizedMethodDispatcher(typeof(TContract), proxy);
+            var a = Activator.CreateInstance(proxy, new object[] { dispatcher }) as TContract;
             return a;
         }
     }

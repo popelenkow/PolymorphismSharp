@@ -5,10 +5,10 @@ namespace Sample.MethodDo.Implementations
 {
     public class DoC : MethodDo<C>
     {
-        public override void Call(C model, params object[] args)
+        public override void Call(C parameter, params object[] args)
         {
             Console.WriteLine("Method " + this.GetType().Name + " before");
-            NextMethod.Call(model, args);
+            NextMethod.Call(parameter, args);
             Console.WriteLine("Method " + this.GetType().Name + " after");
         }
     }
