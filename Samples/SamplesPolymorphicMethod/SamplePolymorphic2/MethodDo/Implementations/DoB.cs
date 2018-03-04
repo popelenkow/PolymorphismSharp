@@ -3,7 +3,7 @@ using Sample.Models;
 
 namespace Sample.MethodDo.Implementations
 {
-    public class DoB : MethodDoBase<B>
+    public class DoB : MethodDo<B>
     {
         public override void Call(B model, params object[] args)
         {

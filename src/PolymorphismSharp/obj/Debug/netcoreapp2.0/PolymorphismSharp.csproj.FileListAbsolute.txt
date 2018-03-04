@@ -1,0 +1,9 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\bin\Debug\netcoreapp2.0\PolymorphismSharp.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\bin\Debug\netcoreapp2.0\PolymorphismSharp.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\bin\Debug\netcoreapp2.0\PolymorphismSharp.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\obj\Debug\netcoreapp2.0\PolymorphismSharp.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\obj\Debug\netcoreapp2.0\PolymorphismSharp.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\obj\Debug\netcoreapp2.0\PolymorphismSharp.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\obj\Debug\netcoreapp2.0\PolymorphismSharp.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\obj\Debug\netcoreapp2.0\PolymorphismSharp.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\src\PolymorphismSharp\obj\Debug\netcoreapp2.0\PolymorphismSharp.pdb

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\PolymorphismSharpBase\PolymorphismSharpBase.csproj" />
+    <ProjectReference Include="..\..\..\src\PolymorphismSharp\PolymorphismSharp.csproj" />
   </ItemGroup>
 
 </Project>

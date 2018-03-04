@@ -1,4 +1,0 @@
-C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample5\obj\Debug\net461\Sample5.csprojResolveAssemblyReference.cache
-C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample5\obj\Debug\net461\Sample5.csproj.CoreCompileInputs.cache
-C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample5\obj\Debug\net461\Sample5.AssemblyInfoInputs.cache
-C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesPolymorphicMethod\Sample5\obj\Debug\net461\Sample5.AssemblyInfo.cs

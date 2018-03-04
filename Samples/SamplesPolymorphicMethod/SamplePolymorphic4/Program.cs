@@ -9,6 +9,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            
             int arg = 7;
             var arr1 = new A1[]
             {

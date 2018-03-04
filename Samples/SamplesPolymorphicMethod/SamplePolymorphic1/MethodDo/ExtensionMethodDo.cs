@@ -1,14 +1,14 @@
-﻿using PolymorphismSharp.Methods.Builder;
+﻿using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodDo
 {
     public static class ExtensionMethodDo
     {
-        private static IMethodDo<A> _method;
+        private static MethodDo<A> _method;
         static ExtensionMethodDo()
         {
-            _method = PolymorphicMethodBuilder.GetMethod<IMethodDo<A>>();
+            _method = PolymorphicMethodBuilder.GetMethod<MethodDo<A>>();
         }
         public static void Do(this A model, params object[] args)
         {

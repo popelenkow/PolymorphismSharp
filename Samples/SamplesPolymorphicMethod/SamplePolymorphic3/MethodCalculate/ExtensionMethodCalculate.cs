@@ -1,14 +1,14 @@
-﻿using PolymorphismSharp.Methods.Builder;
+﻿using PolymorphismSharp.Methods;
 using Sample.Models;
 
 namespace Sample.MethodCalculate
 {
     public static class ExtensionMethodCalculate
     {
-        private static IMethodCalculate<A> _method;
+        private static MethodCalculate<A> _method;
         static ExtensionMethodCalculate()
         {
-            _method = PolymorphicMethodBuilder.GetMethod<IMethodCalculate<A>>();
+            _method = PolymorphicMethodBuilder.GetMethod<MethodCalculate<A>>();
         }
         public static double Calculate(this A model, int arg1, float arg2, string arg3)
         {

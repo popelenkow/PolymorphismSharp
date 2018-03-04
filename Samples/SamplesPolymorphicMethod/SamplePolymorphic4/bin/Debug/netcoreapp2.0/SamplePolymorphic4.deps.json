@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v2.0": {
       "SamplePolymorphic4/1.0.0": {
         "dependencies": {
-          "PolymorphismSharpBase": "1.0.0"
+          "PolymorphismSharp": "1.0.0"
         },
         "runtime": {
           "SamplePolymorphic4.dll": {}
         }
       },
-      "PolymorphismSharpBase/1.0.0": {
+      "PolymorphismSharp/1.0.0": {
         "runtime": {
-          "PolymorphismSharpBase.dll": {}
+          "PolymorphismSharp.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "PolymorphismSharpBase/1.0.0": {
+    "PolymorphismSharp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -7,7 +7,7 @@ using PolymorphismSharp.Methods;
 
 namespace Sample.MethodDo21.Implementations
 {
-    class DoA2B1 : MethodDo21Base<A2, B1>
+    class DoA2B1 : MethodDo21<A2, B1>
     {
         public override void Call(A2 model2, int arg, B1 model1)
         {

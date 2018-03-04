@@ -7,7 +7,7 @@ using PolymorphismSharp.Methods;
 
 namespace Sample.MethodDo12.Implementations
 {
-    class DoB1A2 : MethodDo12Base<B1, A2>
+    class DoB1A2 : MethodDo12<B1, A2>
     {
         public override void Call(A2 model2, int arg, B1 model1)
         {

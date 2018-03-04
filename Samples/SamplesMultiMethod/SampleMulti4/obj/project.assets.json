@@ -197,14 +197,14 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "PolymorphismSharpBase/1.0.0": {
+      "PolymorphismSharp/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "compile": {
-          "bin/placeholder/PolymorphismSharpBase.dll": {}
+          "bin/placeholder/PolymorphismSharp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PolymorphismSharpBase.dll": {}
+          "bin/placeholder/PolymorphismSharp.dll": {}
         }
       }
     }
@@ -667,16 +667,16 @@
         "netstandard.library.nuspec"
       ]
     },
-    "PolymorphismSharpBase/1.0.0": {
+    "PolymorphismSharp/1.0.0": {
       "type": "project",
-      "path": "../../../src/PolymorphismSharpBase/PolymorphismSharpBase.csproj",
-      "msbuildProject": "../../../src/PolymorphismSharpBase/PolymorphismSharpBase.csproj"
+      "path": "../../../src/PolymorphismSharp/PolymorphismSharp.csproj",
+      "msbuildProject": "../../../src/PolymorphismSharp/PolymorphismSharp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.NETCore.App >= 2.0.0",
-      "PolymorphismSharpBase >= 1.0.0"
+      "PolymorphismSharp >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -716,8 +716,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\VladlenMacro\\YandexDisk\\Prog\\DT6.popelenkow\\PolymorphismSharp\\src\\PolymorphismSharpBase\\PolymorphismSharpBase.csproj": {
-              "projectPath": "C:\\Users\\VladlenMacro\\YandexDisk\\Prog\\DT6.popelenkow\\PolymorphismSharp\\src\\PolymorphismSharpBase\\PolymorphismSharpBase.csproj"
+            "C:\\Users\\VladlenMacro\\YandexDisk\\Prog\\DT6.popelenkow\\PolymorphismSharp\\src\\PolymorphismSharp\\PolymorphismSharp.csproj": {
+              "projectPath": "C:\\Users\\VladlenMacro\\YandexDisk\\Prog\\DT6.popelenkow\\PolymorphismSharp\\src\\PolymorphismSharp\\PolymorphismSharp.csproj"
             }
           }
         }
