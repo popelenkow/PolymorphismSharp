@@ -9,8 +9,8 @@ namespace PolymorphismSharp.Parametric
 {
     interface IParametricDispatcher
     {
-        IComparer<Type> GetRealizationComparer(object[] args);
-        Predicate<Type> GetRealizationFilter(object[] args);
+        IComparer<RealizationMethodInfo> GetRealizationComparer(object[] args);
+        Predicate<RealizationMethodInfo> GetRealizationFilter(object[] args);
     }
 
 }

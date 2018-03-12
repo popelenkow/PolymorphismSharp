@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PolymorphismSharp.Methods;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,26 +8,30 @@ namespace PolymorphismSharp.Extensions
 {
     static class TypeExtensions
     {
-        public static bool EqualsGeneralization(this Type interfaceType, Type otherInterfaceType)
+        public static bool EqualsGeneralization(this Type x, Type y)
         {
-            if (interfaceType.Name != otherInterfaceType.Name) return false;
-            if (interfaceType.Namespace != otherInterfaceType.Namespace) return false;
-            return true;
-        }
-
-        public static (Type Interface, Type Implementation)? ExtractInterface(this Type implementationType, Type contractType)
-        {
-            var interfaceType = implementationType.BaseType;
-            while (interfaceType != null)
+            if (x.IsGenericType)
             {
-                if (interfaceType.EqualsGeneralization(contractType))
-                {
-                    return (interfaceType, implementationType);
-                }
-                interfaceType = interfaceType.BaseType;
+                x = x.GetGenericTypeDefinition();
             }
-            return null;
+            if (y.IsGenericType)
+            {
+                y = y.GetGenericTypeDefinition();
+            }
+            return x == y;
         }
+        
+        public static Type GetClass(this Type x, Type y)
+        {
+            while (x != null)
+            {
+                if (x.EqualsGeneralization(y)) break;
+                x = x.BaseType;
+            }
+            return x;
+        }
+        
+
 
 
         public static IEnumerable<Type> GetClassesAndInterfaces(this Type type, Type typeBase = null)
@@ -72,6 +77,7 @@ namespace PolymorphismSharp.Extensions
                 }
                 arrResults.Add(t);
             }
+            arrResults.Reverse();
             if (typeBase != null)
             {
                 return arrResults.Where(x => typeBase.IsAssignableFrom(x)).ToList();

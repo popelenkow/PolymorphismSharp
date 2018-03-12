@@ -1,37 +1,40 @@
-﻿
+﻿using System.Linq;
 using PolymorphismSharp.Methods;
+using PolymorphismSharp.Subtype;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Reflection;
+using PolymorphismSharp.Extensions;
 
 namespace PolymorphismSharp.Management
 {
-    class GeneralizedMethodManager : IGeneralizedMethodManagement
+    class GeneralizedMethodManager : IGeneralizedMethodManager
     {
-        private List<(Type Interface, Type Implementation)> _pairs;
+        private List<RealizationMethodInfo> _realizations;
         private Type _contractType;
-        public object Proxy { get; set; }
-        public GeneralizedMethodManager(Type contractType, List<(Type Interface, Type Implementation)> pairs)
+        private object[] _args;
+        public GeneralizedMethodManager(Type contractType, object[] args, List<RealizationMethodInfo> realizations)
         {
             _contractType = contractType;
-            _pairs = pairs;
+            _realizations = realizations;
+            _args = args;
         }
        
-        public object Call(params object[] args)
+        public object Call()
         {
             if (IsNeedReturnDefault()) return ReturnDefault();
+            var realization = GetPair();
 
-            var pair = GetPair();
-            var instance = CreateInstance(pair);
-
-            return pair.Interface.GetMethod("Call").Invoke(instance, args);
+            var instance = CreateInstance(realization);
+            return InvokeCall(instance);
         }
 
         #region Private
         private int _it = 0;
         private bool IsNeedReturnDefault()
         {
-            return _it == _pairs.Count;
+            return _it == _realizations.Count;
         }
 
         private object ReturnDefault()
@@ -44,20 +47,28 @@ namespace PolymorphismSharp.Management
             }
             return null;
         }
-        private (Type Interface, Type Implementation) GetPair()
+        private RealizationMethodInfo GetPair()
         {
             _it++;
-            return _pairs[_it - 1];
+            return _realizations[_it - 1];
 
         }
-        private object CreateInstance((Type Interface, Type Implementation) pair)
+        private object CreateInstance(RealizationMethodInfo pair)
         {
             var instance = Activator.CreateInstance(pair.Implementation);
-            if (!(instance is MultiMethod))
+            Type type = null;
+            type = type ?? instance.GetType().GetClass(typeof(PolymorphicMethod));
+            type = type ?? instance.GetType().GetClass(typeof(PolymorphicMethod<>));
+
+            if (type != null)
             {
-                instance.GetType().GetProperty("NextMethod").SetMethod.Invoke(instance, new object[] { Proxy });
+                type.GetField("_nextMethod", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(instance, this);
             }
             return instance;
+        }
+        private object InvokeCall(object instance)
+        {
+            return instance.GetType().GetMethod("Call").Invoke(instance, _args);
         }
         #endregion
     }

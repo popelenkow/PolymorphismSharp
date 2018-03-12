@@ -2,54 +2,61 @@
 using PolymorphismSharp.Extensions;
 using PolymorphismSharp.Methods;
 using PolymorphismSharp.Parametric;
+using PolymorphismSharp.Subtype;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace PolymorphismSharp.Management
 {
-    class GeneralizedMethodDispatcher : IGeneralizedMethodManagement
+    class GeneralizedMethodDispatcher : IGeneralizedMethodDispatcher
     {
         private IParametricDispatcher _parametricDispatcher;
+        private ISubtypeDispatcher _subtypeDispatcher;
         private Type _contractType;
         private Type _proxyType;
-        private List<(Type Interface, Type Implementation)> _realizations;
+        private List<RealizationMethodInfo> _realizations;
 
         public GeneralizedMethodDispatcher(Type contractType, Type proxyType)
         {
             _contractType = contractType;
             _proxyType = proxyType;
             _parametricDispatcher = new ParametricDispatcher(contractType);
+            _subtypeDispatcher = new SubtypeDispatcher();
             _realizations = AppDomain.CurrentDomain.GetGeneralizedMethods(contractType);
         }
 
 
         public object Call(params object[] args)
         {
-            return GetMethod(args).Call(args);
+            return GetMethod(args).Call();
         }
 
 
         #region Private
-        private IEnumerable<(Type Interface, Type Implementation)> GetMethods(object[] args)
+        private IEnumerable<RealizationMethodInfo> GetMethods(object[] args)
         {
             var parametricFilter = _parametricDispatcher.GetRealizationFilter(args);
             var parametricComparer = _parametricDispatcher.GetRealizationComparer(args);
+            var subtypeFilter = _subtypeDispatcher.GetRealizationFilter(args);
+            var subtypeComparer = _subtypeDispatcher.GetRealizationComparer(args);
 
-            IEnumerable<(Type Interface, Type Implementation)> ms = _realizations;
+            IEnumerable<RealizationMethodInfo> ms = _realizations;
 
-            ms = ms.Where(x => parametricFilter(x.Interface));
-            ms = ms.OrderBy((x => x.Interface), parametricComparer);
+            ms = ms.Where(x => parametricFilter(x));
+            ms = ms.Where(x => subtypeFilter(x));
+            ms = ms.OrderBy((x => x), parametricComparer);
+            ms = ms.OrderBy((x => x), subtypeComparer);
             return ms.ToList();
         }
 
-        private IGeneralizedMethodManagement GetMethod(object[] args)
+        private IGeneralizedMethodManager GetMethod(object[] args)
         {
             var ms = GetMethods(args).ToList();
-            var manager = new GeneralizedMethodManager(_contractType, ms);
-            var proxy = Activator.CreateInstance(_proxyType, new object[] { manager });
-            manager.Proxy = proxy;
+            var manager = new GeneralizedMethodManager(_contractType, args, ms);
+
             return manager;
         }
         #endregion

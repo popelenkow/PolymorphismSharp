@@ -1,0 +1,13 @@
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\obj\Debug\netcoreapp2.0\MultiSample5.csprojResolveAssemblyReference.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\obj\Debug\netcoreapp2.0\MultiSample5.csproj.CoreCompileInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\obj\Debug\netcoreapp2.0\MultiSample5.AssemblyInfoInputs.cache
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\obj\Debug\netcoreapp2.0\MultiSample5.AssemblyInfo.cs
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\MultiSample5.deps.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\MultiSample5.runtimeconfig.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\MultiSample5.runtimeconfig.dev.json
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\MultiSample5.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\MultiSample5.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\PolymorphismSharp.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\bin\Debug\netcoreapp2.0\PolymorphismSharp.pdb
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\obj\Debug\netcoreapp2.0\MultiSample5.dll
+C:\Users\VladlenMacro\YandexDisk\Prog\DT6.popelenkow\PolymorphismSharp\Samples\SamplesMultiMethod\MultiSample5\obj\Debug\netcoreapp2.0\MultiSample5.pdb

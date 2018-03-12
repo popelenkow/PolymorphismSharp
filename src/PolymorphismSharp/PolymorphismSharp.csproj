@@ -5,8 +5,4 @@
     <RootNamespace>PolymorphismSharp</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Subtype\" />
-  </ItemGroup>
-
 </Project>

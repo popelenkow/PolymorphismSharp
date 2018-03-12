@@ -12,12 +12,15 @@ namespace PolymorphismSharp.Reflection
     /*
      class MethodCustomProxy : MethodCustom
      {
-        private IGeneralizedMethodManagement _management;
-        public MethodCustomProxy(IGeneralizedMethodManagement management)
+        private IGeneralizedMethodDispatcher _dispatcher;
+        public MethodCustomProxy(IGeneralizedMethodDispatcher management)
         {
-            _management = management;
+            _dispatcher = dispatcher;
         }
-        public TResult Call(TArg1 arg1, ...);
+        public override TResult Call(TArg1 arg1, ...)
+        {
+            return _dispatcher.Call(new object[] {arg1, ...});
+        }
      }
     */
     static class ILMethodGenerator
@@ -33,13 +36,13 @@ namespace PolymorphismSharp.Reflection
             var contractMethod = contractType.GetMethod("Call");
             var contractMethodArgs = contractMethod.GetParameters().Select(x => x.ParameterType).ToArray();
             var returnType = contractMethod.ReturnType;
-            var managemetType = typeof(IGeneralizedMethodManagement);
+            var managemetType = typeof(IGeneralizedMethodDispatcher);
             var baseType = contractType;
             var ccc = baseType.GetConstructors();
             var baseConstructor = baseType.GetConstructor(Type.EmptyTypes);
             if (baseConstructor == null) baseConstructor = typeof(object).GetConstructor(Type.EmptyTypes);
 
-            var classType = typeof(IGeneralizedMethodManagement);
+            var classType = typeof(IGeneralizedMethodDispatcher);
             var classMethod = classType.GetMethod("Call");
             var constructorArgs = new Type[] { classType };
 

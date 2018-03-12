@@ -9,9 +9,9 @@ namespace PolymorphismSharp.Extensions
 {
     static class AppDomainExtensions
     {
-        public static List<(Type Interface, Type Implementation)> GetGeneralizedMethods(this AppDomain appDomain, Type contractType)
+        public static List<RealizationMethodInfo> GetGeneralizedMethods(this AppDomain appDomain, Type contractType)
         {
-            List<(Type Interface, Type Implementation)> realizations = new List<(Type Interface, Type Implementation)>();
+            List<RealizationMethodInfo> realizations = new List<RealizationMethodInfo>();
             Assembly[] assemblies = appDomain.GetAssemblies();
             foreach (var assembly in assemblies)
             {
@@ -20,18 +20,36 @@ namespace PolymorphismSharp.Extensions
 
                 foreach (var type in types)
                 {
-                    //if (typeof(IGeneralizedMethod).IsAssignableFrom(type))
-                    //{
-                        var r = type.ExtractInterface(contractType);
-                        if (r != null)
-                        {
-                            realizations.Add(r.Value);
-                        }
-                        
-                    //}
+                    var interfaceType = type.BaseType.GetClass(contractType);
+                    if (interfaceType != null)
+                    {
+                        realizations.Add((interfaceType, type));
+                    }
                 }
             }
             return realizations;
         }
+        
+        public static List<Type> GetDerived(this AppDomain appDomain)
+        {
+            List<Type> derives = new List<Type>();
+            Assembly[] assemblies = appDomain.GetAssemblies();
+            foreach (var assembly in assemblies)
+            {
+                if (assembly == ILMethodGenerator.Assembly) continue;
+                var types = assembly.GetTypes();
+
+                foreach (var type in types)
+                {
+                    var t = type.BaseType.GetClass(typeof(Derive<>));
+                    if (t != null)
+                    {
+                        derives.Add(t);
+                    }
+                }
+            }
+            return derives;
+        }
+        
     }
 }
